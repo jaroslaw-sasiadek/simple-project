@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  transition: all 0.2s;
+  background-color: #164863;
+  color: #ddf2fd;
+}
+
+.light {
+  transition: all 3s;
+  background-color: #f3eeea;
+  color: #776b5d;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  max-width: 1280px;
+  min-height: 96vh;
+}
