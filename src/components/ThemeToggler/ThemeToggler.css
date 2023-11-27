@@ -1,0 +1,41 @@
+.theme-toggler {
+  display: flex;
+  position: relative;
+  border-width: 2px;
+  border-color: #53c28b70;
+  border-radius: 18px;
+  width: 48px;
+  height: 28px;
+  &::before {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    transition: all 1s;
+    border-radius: 50%;
+    background-color: rgb(252, 166, 100);
+    width: 18px;
+    height: 18px;
+    content: "";
+  }
+  &::after {
+    position: absolute;
+    top: 1px;
+    left: 18px;
+    opacity: 0;
+    transition: all 1s;
+    border-radius: 50%;
+    background-color: #164863;
+    width: 16px;
+    height: 16px;
+    content: "";
+  }
+  &.dark {
+    &::before {
+      transform: translateX(16px);
+      background-color: #ffbb5c;
+    }
+    &::after {
+      opacity: 100;
+    }
+  }
+}
